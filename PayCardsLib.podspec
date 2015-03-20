@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "PayCardsLib"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "PayCards lib description"
 
   s.description  = <<-DESC
@@ -73,7 +73,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/i-pesin/PayCardsLib.git", :tag => "1.0.0" }
+  s.source       = { :git => "https://github.com/i-pesin/PayCardsLib.git", :tag => s.version }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -102,7 +102,7 @@ Pod::Spec.new do |s|
   # s.resources = "Resources/*.png"
 
   s.preserve_paths = "libPayCardsNoAcquiring.a", "CRNResources.bundle"
-  s.vendored_library = “libPayCardsNoAcquiring.a”
+  #s.ios.vendored_library = “libPayCardsNoAcquiring.a”
 
 
   # ――― Project Linking ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
