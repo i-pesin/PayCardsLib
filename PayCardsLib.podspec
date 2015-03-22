@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "PayCardsLib"
-  s.version      = "1.0.4"
+  s.version      = "1.0.5"
   s.summary      = "PayCards lib description"
 
   s.description  = <<-DESC
@@ -114,7 +114,7 @@ Pod::Spec.new do |s|
   # s.framework  = "SomeFramework"
   s.frameworks = "CoreVideo", "AudioToolbox", "AVFoundation", "GLKit", "ImageIO", "CoreMedia", "AssetsLibrary"
 
-  s.library   = "PayCardsLib"
+  #s.library   = "PayCardsLib"
   s.ios.vendored_library = "libPayCardsNoAcquiring.a"
   #s.libraries = "stdc++"
 
