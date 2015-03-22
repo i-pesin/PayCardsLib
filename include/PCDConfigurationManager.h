@@ -7,14 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
-typedef NS_OPTIONS(NSInteger, PCDRequiredCardFields) {
-    PCDRequiredCardFieldHolderName = 1 << 0,
-    PCDRequiredCardFieldExpireDate = 1 << 1,
-    PCDRequiredCardFieldCardName = 1 << 2,
-    PCDRequiredCardFieldAll = PCDRequiredCardFieldHolderName | PCDRequiredCardFieldExpireDate | PCDRequiredCardFieldCardName
-    
-};
+#import "PCDConfigurationSettings.h"
 
 typedef NS_ENUM(NSInteger, PCDLocalization) {
     PCDLocalizationEN,
