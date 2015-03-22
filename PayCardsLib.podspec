@@ -128,6 +128,6 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.xcconfig =  { 'LIBRARY_SEARCH_PATHS' => '"$(SRCROOT)/Pods/PayCardsLib"' }
-  s.dependency 'OpenCV'
+  s.dependency 'OpenCV', "~> 2.4.9"
 
 end
