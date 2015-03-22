@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "PayCardsLib"
-  s.version      = "1.0.1"
+  s.version      = "1.0.2"
   s.summary      = "PayCards lib description"
 
   s.description  = <<-DESC
@@ -99,9 +99,9 @@ Pod::Spec.new do |s|
   #
 
   # s.resource  = "icon.png"
-  # s.resources = "Resources/*.png"
+  s.resources = "CRNResources.bundle"
 
-  s.preserve_paths = "libPayCardsNoAcquiring.a", "CRNResources.bundle"
+  s.preserve_paths = "libPayCardsNoAcquiring.a"
   #s.ios.vendored_library = “libPayCardsNoAcquiring.a”
 
 
@@ -114,8 +114,9 @@ Pod::Spec.new do |s|
   # s.framework  = "SomeFramework"
   s.frameworks = "CoreVideo", "AudioToolbox", "AVFoundation", "GLKit", "ImageIO", "CoreMedia", "AssetsLibrary"
 
-  # s.library   = "stdc++"
-  s.libraries = "stdc++", "PayCardsNoAcquiring"
+  s.library   = "PayCardsLib"
+  s.ios.vendored_library = "libPayCardsNoAcquiring.a"
+  #s.libraries = "stdc++"
 
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -126,7 +127,7 @@ Pod::Spec.new do |s|
 
   s.requires_arc = true
 
-  # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  s.dependency "OpenCV"
+  s.xcconfig =  { 'LIBRARY_SEARCH_PATHS' => '"$(SRCROOT)/Pods/PayCardsLib"' }
+  s.dependency 'OpenCV'
 
 end
