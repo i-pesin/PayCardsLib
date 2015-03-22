@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "PayCardsLib"
-  s.version      = "1.0.7"
+  s.version      = "1.0.8"
   s.summary      = "PayCards lib description"
 
   s.description  = <<-DESC
@@ -101,8 +101,7 @@ Pod::Spec.new do |s|
   # s.resource  = "icon.png"
   s.resources = "CRNResources.bundle"
 
-  s.preserve_paths = "libPayCardsNoAcquiring.a"
-  #s.ios.vendored_library = “libPayCardsNoAcquiring.a”
+  s.preserve_paths = "payCardsNoAcquiringLib.a"
 
 
   # ――― Project Linking ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -112,10 +111,10 @@ Pod::Spec.new do |s|
   #
 
   # s.framework  = "SomeFramework"
-  s.frameworks = "CoreVideo", "AudioToolbox", "AVFoundation", "GLKit", "ImageIO", "CoreMedia", "AssetsLibrary"
+  s.frameworks = "GLKit", "ImageIO"
 
   #s.library   = "PayCardsLib"
-  s.ios.vendored_library = "libPayCardsNoAcquiring.a"
+  s.ios.vendored_library = "payCardsNoAcquiringLib.a"
   #s.libraries = "stdc++"
 
 
